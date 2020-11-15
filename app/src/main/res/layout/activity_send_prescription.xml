@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#9f9f9f"
+    tools:context=".SendPrescription">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_bottom_vector"
+        android:contentDescription="TODO"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prescribe Medicines :"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="5dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:id="@+id/send_pres_medicines"
+                android:hint=" medicines required"
+                android:padding="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prescribe Tests :"
+                android:layout_marginTop="8dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="5dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:id="@+id/send_pres_tests"
+                android:hint=" if any"
+                android:padding="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Video call link :"
+                android:layout_marginTop="8dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="5dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:id="@+id/send_pres_call_link"
+                android:hint=" if requested for a video call"
+                android:padding="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Call timing :"
+                android:layout_marginTop="8dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="5dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:padding="5dp"
+                android:id="@+id/send_pres_call_time"
+                android:hint=" if requested for any call ( HH:MM am/pm )"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Precautions :"
+                android:layout_marginTop="8dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="5dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:id="@+id/send_pres_precautions"
+                android:hint=" if any"
+                android:padding="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Other description :"
+                android:layout_marginTop="8dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="5dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:id="@+id/send_pres_description"
+                android:hint=" if any"
+                android:padding="5dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/send_pres_btn"
+                android:layout_marginVertical="40dp"
+                android:layout_marginHorizontal="80dp"
+                android:text="send prescription"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

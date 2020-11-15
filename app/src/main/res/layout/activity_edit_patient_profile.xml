@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditPatientProfile">
+
+    <ScrollView android:layout_height="match_parent" android:layout_width="match_parent" android:background="#2F4F4F" android:padding="12dp" android:orientation="vertical">
+
+
+        -<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:background="@drawable/layout_draw" android:padding="20dp" android:orientation="vertical" tools:ignore="MissingConstraints">
+
+
+        -<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+
+        <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textColor="#000058" android:textSize="15sp" android:text="Name :" android:layout_weight="3"/>
+
+        <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_weight="1" android:id="@+id/edit_pat_name" android:layout_marginBottom="5dp" android:inputType="text"/>
+
+    </LinearLayout>
+
+        -<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+
+        <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textColor="@color/text_col" android:textSize="15sp" android:text="Contact no :" android:layout_weight="3"/>
+
+        <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_weight="1" android:id="@+id/edit_pat_mob_no" android:layout_marginBottom="5dp" android:inputType="number"/>
+
+    </LinearLayout>
+
+
+        -<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+
+        <TextView android:layout_height="wrap_content" android:layout_width="380dp" android:textColor="@color/text_col" android:textSize="15sp" android:text="Date of Birth :" android:layout_weight="2"/>
+
+        <EditText android:layout_height="wrap_content" android:layout_width="match_parent"  android:layout_weight="1" android:id="@+id/edit_pat_dob" android:layout_marginBottom="5dp" android:inputType="text" android:gravity="center_horizontal" android:hint="DD-MM-YYYY" android:textAlignment="center"/>
+
+    </LinearLayout>
+
+
+        -<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal" android:paddingBottom="5dp">
+
+        <TextView android:layout_height="36dp" android:layout_width="374dp" android:textColor="@color/text_col" android:textSize="15sp" android:text="Blood Group:" android:layout_weight="2"/>
+
+        <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_weight="1" android:id="@+id/edit_pat_blood_group" android:layout_marginBottom="5dp" android:inputType="text" android:gravity="center_horizontal" android:textAlignment="center"/>
+
+    </LinearLayout>
+
+        -<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+
+        <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textColor="@color/text_col" android:textSize="15sp" android:text="Weight :" android:layout_weight="1"/>
+
+        <EditText android:layout_height="wrap_content" android:layout_width="match_parent"  android:layout_weight="1" android:id="@+id/edit_pat_weight" android:layout_marginBottom="5dp" android:inputType="number" android:gravity="center_horizontal" android:hint="Kg" android:textAlignment="center"/>
+
+        <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textColor="@color/text_col" android:textSize="15sp" android:text="Height :" android:layout_weight="1" android:paddingLeft="10dp"/>
+
+        <EditText android:layout_height="wrap_content" android:layout_width="match_parent"  android:layout_weight="1" android:id="@+id/edit_pat_height" android:layout_marginBottom="5dp" android:inputType="number" android:gravity="center_horizontal" android:hint="cm" android:textAlignment="center"/>
+
+    </LinearLayout>
+
+
+        -<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+
+        <TextView android:layout_height="wrap_content" android:layout_width="371dp" android:textColor="@color/text_col" android:textSize="15sp" android:text="Allergies :" android:layout_weight="3"/>
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/edit_pat_allergy"
+            android:layout_marginBottom="5dp"
+            android:inputType="text"
+            android:hint="Optional"
+            android:textAlignment="center"
+            android:paddingHorizontal="1dp"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+
+        -<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+
+        <TextView android:layout_height="wrap_content" android:layout_width="443dp" android:textColor="@color/text_col" android:textSize="15sp" android:text="ChronicDisease :" android:layout_weight="2"/>
+
+        <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal"  android:layout_weight="1" android:id="@+id/edit_pat_chronic_disease" android:layout_marginBottom="5dp" android:inputType="text" android:hint="Optional" android:textAlignment="center" android:paddingLeft="10dp"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+        <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textColor="@color/text_col" android:textSize="15sp" android:text="Residential Address :" android:layout_weight="2" android:paddingVertical="5dp"/>
+
+        <EditText android:layout_height="wrap_content" android:layout_width="match_parent"  android:id="@+id/edit_pat_locality" android:layout_marginBottom="5dp" android:inputType="text" android:hint=" Street / Locality / Village " android:paddingHorizontal="5dp"/>
+
+
+        -<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+
+        <EditText android:layout_height="wrap_content" android:layout_width="match_parent"  android:layout_weight="1" android:id="@+id/edit_pat_city" android:layout_marginBottom="5dp" android:inputType="text" android:hint="City" android:paddingHorizontal="5dp"/>
+
+        <EditText android:layout_height="wrap_content" android:layout_width="match_parent"  android:layout_weight="1" android:id="@+id/edit_pat_pin_code" android:layout_marginBottom="5dp" android:inputType="number" android:hint="PIN CODE" android:paddingHorizontal="5dp"/>
+
+    </LinearLayout>
+
+        <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textColor="@color/colorAccent" android:textSize="12sp" android:text="Tip: Keep your details updated" android:gravity="center_horizontal" android:textAlignment="center" android:layout_marginVertical="20dp"/>
+
+        <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:background="@drawable/button_rad"  android:text="SAVE" android:id="@+id/edit_pat_pro_save_btn" android:layout_marginHorizontal="80dp"
+            android:layout_marginVertical="10dp"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

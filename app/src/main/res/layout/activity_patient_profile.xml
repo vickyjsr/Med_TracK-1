@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5c5c5c"
+    tools:context=".PatientProfile">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_bottom"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_bottom_vector"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_top"
+        android:adjustViewBounds="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_top_vector" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/iv_top"
+        android:layout_above="@+id/iv_bottom">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="15dp"
+                android:id="@+id/pro_img_card">
+                <RelativeLayout
+                    android:background="#E66150"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/pat_pro_img"
+                        android:src="@drawable/profile_512"
+                        android:layout_centerHorizontal="true"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="#EFEEEE"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="NAME"
+                        android:textSize="22sp"
+                        android:textColor="#222222"
+                        android:id="@+id/pat_pro_name"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="12dp"
+                        android:layout_below="@+id/pat_pro_img"
+                        android:gravity="center_horizontal" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginHorizontal="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E66150"
+                    android:paddingVertical="12dp"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="20dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#222222"
+                        android:padding="2dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="20dp"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:text="About"
+                        android:gravity="center_horizontal" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#f3f3f3"
+                        android:padding="2dp"
+                        android:id="@+id/pat_pro_dob"
+                        android:textSize="16sp"
+                        android:text="DOB" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#f3f3f3"
+                        android:textSize="16sp"
+                        android:id="@+id/pat_pro_sex"
+                        android:padding="2dp"
+                        android:text="Gender" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#f3f3f3"
+                        android:textSize="16sp"
+                        android:id="@+id/pat_pro_blood_grp"
+                        android:padding="2dp"
+                        android:text="Blood Group" />
+                    <TextView
+                        android:textSize="16sp"
+                        android:padding="2dp"
+                        android:id="@+id/pat_pro_height"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#f3f3f3"
+                        android:text="Height" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:id="@+id/pat_pro_weight"
+                        android:padding="2dp"
+                        android:textColor="#f3f3f3"
+                        android:text="Weight" />
+                    <TextView
+                        android:textSize="16sp"
+                        android:padding="2dp"
+                        android:id="@+id/pat_pro_allergy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#f3f3f3"
+                        android:text="Allergies" />
+                    <TextView
+                    android:textSize="16sp"
+                    android:padding="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#f3f3f3"
+                        android:id="@+id/pat_pro_chronic_disease"
+                    android:text="Chronic disease" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:elevation="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginHorizontal="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E66150"
+                    android:paddingVertical="12dp"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="20dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#222222"
+                        android:padding="2dp"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_marginRight="20dp"
+                        android:textAlignment="center"
+                        android:text="Contact"
+                        android:gravity="center_horizontal" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#f3f3f3"
+                        android:textSize="16sp"
+                        android:padding="2dp"
+                        android:id="@+id/pat_pro_address"
+                        android:text="Lives at" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#f3f3f3"
+                        android:textSize="16sp"
+                        android:padding="2dp"
+                        android:id="@+id/pat_pro_email"
+                        android:text="Email : medtrack@gmail.com" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#f3f3f3"
+                        android:textSize="16sp"
+                        android:id="@+id/pat_pro_mob_no"
+                        android:padding="2dp"
+                        android:text="Mobile no : 8863987656" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

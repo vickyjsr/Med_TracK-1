@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#5c5c5c"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:elevation="8dp">
+
+        <RelativeLayout
+            android:background="#Ff7e6d"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/to_from"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#ededed"
+                    android:layout_marginHorizontal="7dp"
+                    android:text="From"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#ededed"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_height="wrap_content"
+                    android:text="To"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/to_from"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/names_ll">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Patient name"
+                    android:textColor="#222222"
+                    android:paddingBottom="5dp"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:paddingHorizontal="7dp"
+                    android:id="@+id/sin_row_app_pat_name" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Doctor name"
+                    android:paddingBottom="5dp"
+                    android:layout_weight="1"
+                    android:textColor="#222222"
+                    android:textSize="20sp"
+                    android:paddingHorizontal="7dp"
+                    android:id="@+id/sin_row_app_doc_name"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/date_time_stat_ll"
+                android:layout_below="@+id/names_ll"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="time"
+                    android:textColor="#ededed"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="15sp"
+                    android:id="@+id/sin_row_app_time"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="date"
+                    android:textColor="#ededed"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="15sp"
+                    android:id="@+id/sin_row_app_date"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="status"
+                    android:textColor="#ededed"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="15sp"
+                    android:id="@+id/sin_row_app_status"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="2dp"
+                android:layout_below="@id/date_time_stat_ll"
+                android:layout_marginHorizontal="8dp">
+                <Button
+                    android:layout_marginBottom="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="symptoms"
+                    android:background="@drawable/button_rad"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:id="@+id/sin_row_app_cause"/>
+                <Button
+                    android:layout_marginBottom="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_rad"
+                    android:layout_marginLeft="5dp"
+                    android:text="Prescription"
+                    android:id="@+id/sin_row_app_pres"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

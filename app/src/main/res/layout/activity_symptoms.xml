@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SymptomsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2F4F4F"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="10dp"
+        android:orientation="vertical">
+
+        <!--       grey #808080,-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_draw"
+            android:orientation="vertical"
+            android:padding="20dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="10dp"
+                android:text="Select symptoms (if any)"
+                android:textAlignment="center"
+                android:textColor="#efefef"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/fever_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Fever" />
+
+            <CheckBox
+                android:id="@+id/cold_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Cold" />
+
+            <CheckBox
+                android:id="@+id/cough_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Cough" />
+
+            <CheckBox
+                android:id="@+id/runny_nose_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Runny Nose" />
+
+            <CheckBox
+                android:id="@+id/sore_throat_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Sore Throat" />
+
+            <CheckBox
+                android:id="@+id/acidity_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Acidity" />
+
+            <CheckBox
+                android:id="@+id/headache_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Headache" />
+
+            <CheckBox
+                android:id="@+id/stomachache_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Stomachache" />
+
+            <CheckBox
+                android:id="@+id/earache_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Earache" />
+
+            <CheckBox
+                android:id="@+id/loose_motion_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Loose Motion" />
+
+            <CheckBox
+                android:id="@+id/vomiting_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Vomiting" />
+
+            <CheckBox
+                android:id="@+id/hard_stool_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Hard stool" />
+
+            <CheckBox
+                android:id="@+id/loose_stool_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Loose stool" />
+
+            <CheckBox
+                android:id="@+id/dizziness_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Dizziness" />
+
+            <CheckBox
+                android:id="@+id/frequent_urination_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Frequent urination" />
+
+            <CheckBox
+                android:id="@+id/constipation_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Constipation" />
+
+            <CheckBox
+                android:id="@+id/pale_eyes_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Pale eyes" />
+
+            <CheckBox
+                android:id="@+id/pale_urine_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Pale urine" />
+
+            <CheckBox
+                android:id="@+id/unconsciousness_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Unconsciousness" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginVertical="5dp"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <!--                <EditText-->
+                <!--                    android:id="@+id/symptoms_description"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_margin="1dp"-->
+                <!--                    android:background="#ffffff"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:hint="Description or other symptoms (optional)"-->
+                <!--                    android:inputType="text"-->
+                <!--                    android:maxLength="300"-->
+                <!--                    android:padding="4dp"-->
+                <!--                    android:textSize="16sp"-->
+                <!--                    android:importantForAutofill="no" />-->
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:layout_margin="1dp"
+                    android:maxLength="400"
+                    android:maxLines="15"
+                    android:id="@+id/symptoms_description"
+                    android:padding="8dp"
+                    android:textSize="14sp"
+                    android:hint="Description or other symptoms (optional)"
+                    android:importantForAutofill="no" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Request for call"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:id="@+id/req_for_call_rad_grp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/audio_call_rad_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Audio call" />
+
+                <RadioButton
+                    android:id="@+id/video_call_rad_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Video call" />
+
+                <RadioButton
+                    android:id="@+id/no_call_rad_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="None" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/req_for_prescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="50dp"
+                android:background="@drawable/button_rad"
+                android:layout_marginVertical="10dp"
+                android:text="Request for Prescription"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

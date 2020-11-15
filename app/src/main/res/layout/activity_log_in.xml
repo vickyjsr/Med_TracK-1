@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:background="#7f7f7f"
+    tools:context=".LogInActivity" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_bottom"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/ic_bottom_vector"
+        />
+    -<ScrollView android:layout_height="match_parent" android:layout_width="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_top"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_top_vector" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log in to Med_TracK"
+            android:id="@+id/text_login"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:layout_marginVertical="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/iv_top"
+            android:gravity="center_horizontal" />
+
+    -<LinearLayout
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/text_login" android:layout_height="wrap_content" android:layout_width="match_parent" android:background="@drawable/radius" android:padding="20dp" android:layout_gravity="center" android:layout_marginHorizontal="20dp" android:orientation="vertical">
+
+    <EditText
+        android:layout_marginTop="10dp" android:layout_height="wrap_content" android:layout_width="match_parent" android:autofillHints="" android:id="@+id/pat_login_email_id" android:inputType="textEmailAddress" android:hint="e-mail id"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/pat_login_password" android:inputType="textPassword" android:hint="password" android:importantForAutofill="no"/>
+
+
+
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:background="@drawable/button_rad" android:layout_margin="50dp" android:id="@+id/pat_login_button" android:textAllCaps="false" android:textColor="#F0F8FF" android:text="Log in"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="#F0F8FF"
+            android:layout_weight="1"
+            android:text="Forgot password?"
+            android:onClick="startResetPasswordActivity"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAlignment="viewStart"
+            android:gravity="start" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="#F0F8FF"
+            android:text="Sign up!"
+            android:layout_weight="1"
+            android:onClick="startRegistrationActivity"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAlignment="viewEnd"
+            android:gravity="end" />
+    </LinearLayout>
+
+</LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

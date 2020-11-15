@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditDoctorProfile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2f4f4f"
+        android:padding="12dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/layout_draw"
+            android:padding="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000058"
+                    android:textSize="15sp"
+                    android:text="Name :"
+                    android:layout_weight="3"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="  don't use any prefix"
+                    android:id="@+id/edit_doc_name"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000058"
+                    android:textSize="15sp"
+                    android:text="Contact no :"
+                    android:layout_weight="3"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:id="@+id/edit_doc_mob_no"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+
+                <TextView android:layout_height="wrap_content" android:layout_width="380dp" android:textColor="@color/text_col" android:textSize="15sp" android:text="Date of Birth :" android:layout_weight="2"/>
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/edit_doc_dob"
+                    android:layout_marginBottom="5dp"
+                    android:inputType="text"
+                    android:gravity="center_horizontal"
+                    android:hint="DD-MM-YYYY"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000058"
+                    android:textSize="15sp"
+                    android:text="MBBS Reg Id :"
+                    android:layout_weight="2"/>
+                <EditText
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:id="@+id/edit_doc_mbbs_id"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000058"
+                    android:textSize="15sp"
+                    android:text="Degrees :"
+                    android:layout_weight="3"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="other than MBBS (optional)"
+                    android:inputType="text"
+                    android:id="@+id/edit_doc_degrees"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000058"
+                    android:textSize="15sp"
+                    android:text="Work at :"
+                    android:layout_weight="3"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="    organisation/hospital"
+                    android:inputType="text"
+                    android:id="@+id/edit_doc_hospital"/>
+            </LinearLayout>
+
+
+            <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textColor="@color/text_col" android:textSize="15sp" android:text="Residential Address :" android:layout_weight="2" android:paddingVertical="5dp"/>
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/edit_doc_locality"
+                android:layout_marginBottom="5dp"
+                android:inputType="text"
+                android:hint=" Street / Locality / Village "
+                android:paddingHorizontal="5dp"/>
+
+
+            -<LinearLayout
+            android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/edit_doc_city"
+                android:layout_marginBottom="5dp"
+                android:inputType="text"
+                android:hint="City"
+                android:paddingHorizontal="5dp"/>
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/edit_doc_pin_code"
+                android:layout_marginBottom="5dp"
+                android:inputType="number"
+                android:hint="PIN CODE"
+                android:paddingHorizontal="5dp"/>
+
+        </LinearLayout>
+            <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textColor="@color/colorAccent" android:textSize="12sp" android:text="Tip: Keep your details updated" android:gravity="center_horizontal" android:textAlignment="center" android:layout_marginVertical="20dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_rad"
+                android:text="SAVE"
+                android:layout_marginHorizontal="80dp"
+                android:layout_marginVertical="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAllCaps="false"
+                android:id="@+id/edit_doc_pro_save_btn"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

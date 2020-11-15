@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#D8D7D7"
+    android:layout_height="match_parent"
+    tools:context=".QRCodeScanner">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_top_vector"
+        android:contentDescription="TODO"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_bottom_vector"
+        android:contentDescription="TODO"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect to virtual MediBox"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_above="@+id/f_c_o_qr_c"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25dp"
+        android:id="@+id/c_t_v_m"
+        android:paddingBottom="20dp"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/f_c_o_qr_c"
+        android:text="Focus camera on QR-code of MediBox"
+        android:layout_above="@+id/camerapreview"
+        android:paddingVertical="10dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <SurfaceView
+        android:id="@+id/camerapreview"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:padding="5dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview"
+        android:layout_below="@id/camerapreview"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark" />
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/textview"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_rad"
+        android:layout_margin="15dp"
+        android:paddingHorizontal="15dp"
+        android:id="@+id/ent_man_btn"
+        android:textAllCaps="false"
+        android:textColor="#FF3D27"
+        android:text="Enter causes manually"/>
+</RelativeLayout>
