@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.medapp">
+    <!-- added 4 lines for qr code scanner -->
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="true" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_med_track"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_med_track"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Help"
+            android:label="Help"></activity>
+        <activity android:name=".ContactUs" />
+        <activity
+            android:name=".ResetPassword"
+            android:theme="@style/AppTheme.PopUp" />
+        <activity android:name=".PrescriptionSent" />
+        <activity android:name=".EditDoctorProfile" />
+        <activity android:name=".DoctorProfile" />
+        <activity android:name=".EditPatientProfile" />
+        <activity android:name=".PatientProfile" />
+        <activity android:name=".SendPrescription" />
+        <activity android:name=".DoctorHome" />
+        <activity android:name=".PrescriptionActivity" />
+        <activity android:name=".CauseActivity" />
+        <activity
+            android:name=".PatientHome"
+            android:label="Home " />
+        <activity android:name=".SymptomsActivity" />
+        <activity android:name=".EnterManually" />
+        <activity android:name=".QRCodeScanner" />
+        <activity
+            android:name=".RegistrationPopUp"
+            android:theme="@style/AppTheme.PopUp" />
+        <activity android:name=".PatientRegistration" />
+        <activity android:name=".AppointmentActivity" />
+        <activity
+            android:name=".ListAppointment"
+            android:label="Your Appointments" />
+        <activity android:name=".DoctorsRegistrationActivity" />
+        <activity
+            android:name=".ListDoctors"
+            android:label="Available Doctors" />
+        <activity android:name=".LogInActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+    </application>
+
+</manifest>
