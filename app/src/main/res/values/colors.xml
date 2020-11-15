@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+-<resources>
+
+<color name="colorPrimary">#EF5C4A</color>
+
+<color name="colorPrimaryDark">#BA3526</color>
+
+<color name="colorAccent">#4AE850</color>
+
+<color name="text_col">#000050</color>
+
+<color name="radio_b">#FFFFFF</color>
+
+</resources>
